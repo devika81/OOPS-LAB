@@ -6,6 +6,8 @@ class Person{
     String address;
     int age;
 
+    
+
     public Person(String name,String gender,String address,int age){
           this.name = name;
           this. gender = gender;
@@ -32,9 +34,9 @@ class Employee extends Person{
 class Teacher extends Employee{
    String subject;
    String department;
-   String teacherid;
+   int teacherid;
 
-   public Teacher(String name,String gender,String address,int age,int empid,String company_name,String qualification,int salary,String subject,String department,String teacherid){
+   public Teacher(String name,String gender,String address,int age,int empid,String company_name,String qualification,int salary,String subject,String department,int teacherid){
     super(name,gender,address,age,empid,company_name,qualification,salary);
     this.subject=subject;
     this.department=department;
@@ -64,6 +66,7 @@ class q3{
         System.out.println("Enter the number of employees");
         int n =sc.nextInt();
         Teacher teachers[]=new Teacher[n];
+        
 
         for(int i=0;i<n;i++){
 
@@ -73,7 +76,7 @@ class q3{
         String address = sc.next();
         int age = sc.nextInt();
         int empid = sc.nextInt();
-        String company_name = sc.next();
+        String company_name = sc.next(); 
         String qualification = sc.next();
         int salary = sc.nextInt();
         String subject = sc.next();
@@ -89,9 +92,6 @@ class q3{
             teachers[i].display();
             System.out.println("***************************************");
         }
-        
-
-
 
     }
 }
