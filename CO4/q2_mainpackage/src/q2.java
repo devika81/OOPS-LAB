@@ -10,7 +10,7 @@ public class q2 {
         
           Scanner sc = new Scanner(System.in);
           int  choice,num1,num2;
-         Arithmetic obj1 = new Arithmetic();
+          Arithmetic obj1 = new Arithmetic();
 
         do
           {
@@ -25,7 +25,6 @@ public class q2 {
                     System.out.println("Enter 2 numbers:");
                     num1 = sc.nextInt();
                     num2 = sc.nextInt();
-                    
                     obj1.add(num1, num2);
                     break;
 
@@ -40,7 +39,6 @@ public class q2 {
                     System.out.println("Enter 2 numbers:");
                     num1 = sc.nextInt();
                     num2 = sc.nextInt();
-                   
                     obj1.mult(num1, num2);
                     break;
 
@@ -48,7 +46,6 @@ public class q2 {
                     System.out.println("Enter 2 numbers:");
                     num1 = sc.nextInt();
                     num2 = sc.nextInt();
-                   
                     obj1.div(num1, num2);
                     break;
 
